@@ -2,13 +2,26 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
+	<meta name="keywords" content="random map generator, random map generation, hexagon 2d maps, hex based maps, table top game map generator, unity game engine, turn based games, rpg games, old school games, retro games, fantasy general, Map generation using cellular automata, a star path finding algorithm">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unity WebGL Player | Hex World Generator</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+	<link rel="stylesheet" href="nicepage.css" media="screen">
+	<link rel="stylesheet" href="Home.css" media="screen">
     <script src="TemplateData/UnityProgress.js"></script>
+	<script class="u-script" type="text/javascript" src="jquery.js" "="" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" "="" defer=""></script>
+	<meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
   </head>
-  <body class="template">
+  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode" data-lang="en">
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- Section1 - Unity Player starts -->
+<Section>
     <div class="template-wrap clear">
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="675px" width="1200px"></canvas>
       <br>
@@ -16,17 +29,212 @@
       <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
       <div class="title">Hex World Generator</div>
     </div>
-    <script type='text/javascript'>
+</Section>	
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- Section1 - Unity Player ends -->	
+	
+<!-- Section2 - Nicepage Editor starts -->	
+    <section class="u-align-center u-clearfix u-section-1" id="sec-8b50">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-1">
+          <span style="font-weight: 700;">Introduction</span>
+          <span style="font-weight: 700;">
+            <span style="font-weight: 400;">
+              <span style="font-weight: 700;"></span>
+            </span>
+          </span>
+        </h2>
+        <div class="u-align-left u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-image u-shading u-image-1" data-image-width="960" data-image-height="400" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+          <div class="u-container-layout u-container-layout-1">
+            <p class="u-text u-text-2">
+              <span style="font-size: 20px;">Summer of 1997, night, probably playing it for the 20th time, trying to optimize my results - the shareware version of "<span style="font-weight: 700;">Fantasy General</span>" by SSI. It had very few levels and it did not even allowed you to save the game, still these are some of my fondest memories growing up in the nineties.
+              </span>
+              <br>
+              <br>
+              <span style="font-size: 1.25rem;">I've always dreamt of creating the same magic in glorious 2D graphics, fortunately the ecosystem and technology now is accessible enough to make it a reality.</span>
+              <br>
+              <span style="font-size: 0.625rem;">
+                <span style="font-size: 1rem;"></span>
+              </span>
+              <br>
+              <span style="font-size: 1.25rem;">Thanks for checking out this early tech demo!</span>
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-2" id="carousel_c4c8">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-1">
+          <span style="font-weight: 700;">How To?</span>
+          <span style="font-weight: 700;"></span>
+        </h2>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-list-item u-repeater-item" data-href="#">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <h4 class="u-text u-text-2">1. random map Generation</h4>
+                <p class="u-text u-text-3">Choose your biome from the drop-dow. Adjust the amount of water, forest &amp; mountains and press "Go". Play around with random map generation - no two generated maps are the same!</p>
+              </div>
+            </div>
+            <div class="u-list-item u-repeater-item u-video-cover">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <h4 class="u-text u-text-4">2. Unit Placement</h4>
+                <p class="u-text u-text-5">Select the unit from the drop down. Left click on any cell to place the selected unit.</p>
+              </div>
+            </div>
+            <div class="u-list-item u-repeater-item u-video-cover">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <h4 class="u-text u-text-6">3. Unit Movement</h4>
+                <p class="u-text u-text-7">Select a placed unit, move it to any tile in the allowed highlighted range.</p>
+              </div>
+            </div>
+            <div class="u-list-item u-repeater-item u-video-cover">
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                <h4 class="u-text u-text-8">4. Camera Movement</h4>
+                <p class="u-text u-text-9">Grab (right mouse down) to move the map. Mouse wheel to zoom-in &amp; out. You are all set, use full screen mode for the best experience (button at the bottom right of the Unity Webplayer). All the best!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-ce24" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+        <h2 class="u-text u-text-1">Quick Tutorial</h2>
+        <div class="u-align-left u-video u-video-1">
+          <div class="embed-responsive embed-responsive-1">
+            <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/Dxu-WtDCCXU?mute=1&amp;showinfo=0&amp;controls=0&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <p class="u-text u-text-2">Please report if you find any bugs, other suggestions also welcome!</p>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-4" id="sec-1685" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-subtitle u-text u-text-1">Features</h2>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="580" data-image-height="864" src="images/Randomgen.png">
+                <h3 class="u-text u-text-default u-text-2"> Random Map Generator</h3>
+                <p class="u-text u-text-3"> 1. Uses Cellular Automata to create interesting areas to explore - villages, cities, mountain fortresses, mines, ruins etc.<br>2. No two maps are the same!
+                </p>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="580" data-image-height="864" src="images/UNitplacement.png">
+                <h3 class="u-text u-text-default u-text-4"> Unit Placement</h3>
+                <p class="u-text u-text-5"> 1. Tile aware unit placement<br>2. Units can't be placed on wrong tiles<br>3. Ally - enemy units (Green - Red)
+                </p>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="580" data-image-height="864" src="images/Unitmovement.png">
+                <h3 class="u-text u-text-default u-text-6"> Efficient Path-finding</h3>
+                <p class="u-text u-text-7"> 1. Efficient path finding algorithm with tile aware movement<br>2. Unit based movement eg. flying units can go anywhere
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="sec-21c5">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-1">Assets Used</h2>
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1" src="" data-image-width="600" data-image-height="325">
+                    <div class="u-container-layout u-valign-middle u-container-layout-1"></div>
+                  </div>
+                  <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
+                    <div class="u-container-layout u-valign-middle u-container-layout-2">
+                      <h2 class="u-text u-text-2">Hex tiles by&nbsp;David Baumgart</h2>
+                      <p class="u-text u-text-3">Best 2D handpainted hex tiles on the asset store, hands down.</p>
+                      <a href="https://assetstore.unity.com/publishers/13841" class="u-btn u-button-style u-btn-1" target="_blank" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">See in Asset Store</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-3">
+                    <div class="u-container-layout u-container-layout-3">
+                      <h2 class="u-text u-text-4">Character images by A-Ravlik</h2>
+                      <p class="u-text u-text-5">Great collection of 2D character art, icons etc. in a very attractive style.</p>
+                      <a href="https://assetstore.unity.com/publishers/67736" class="u-btn u-btn-rectangle u-button-style u-palette-1-base u-btn-2" target="_blank">See In Asset Store</a>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-2" src="" data-image-width="600" data-image-height="325">
+                    <div class="u-container-layout u-valign-middle u-container-layout-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-6" id="sec-42c6" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-1">Contact Me</h2>
+        <div class="u-form u-form-1">
+          <form action="//publish.nicepage.com/Form/Process" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
+            <div class="u-form-group u-form-name u-label-none">
+              <label for="name-3b9a" class="u-label">Name</label>
+              <input type="text" placeholder="Enter your Name" id="name-3b9a" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            </div>
+            <div class="u-form-email u-form-group u-label-none">
+              <label for="email-3b9a" class="u-label">Email</label>
+              <input type="email" placeholder="Enter a valid email address" id="email-3b9a" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            </div>
+            <div class="u-form-group u-form-message u-label-none">
+              <label for="message-3b9a" class="u-label">Message</label>
+              <textarea placeholder="Enter your message" rows="4" cols="50" id="message-3b9a" name="message" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required=""></textarea>
+            </div>
+            <div class="u-align-left u-form-group u-form-submit">
+              <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="7acaf1488a6917cf897312fa6865c1b8">
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-66f0">
+		<div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+		<p class="u-small-text u-text u-text-variant u-text-1">
+		<img src="https://counter9.stat.ovh/private/freecounterstat.php?c=e24ggf993b23cmajrgswwg4z9zdak6q8" border="0" title="website counters" alt="website counters">
+		</p>
+		<p class="u-small-text u-text u-text-variant u-text-1">© ​rkb81labs@gmail.com 2022</p>
+		</div>
+	</footer>
+<!-- Section2 - Nicepage Editor ends -->	
+	
+<script type='text/javascript'>
   var Module = {
     TOTAL_MEMORY: 268435456,
     errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
     backgroundColor: "#222C36",
     splashStyle: "Light",
-    dataUrl: "Release/Hex World Generator WebGL.data",
-    codeUrl: "Release/Hex World Generator WebGL.js",
-    asmUrl: "Release/Hex World Generator WebGL.asm.js",
-    memUrl: "Release/Hex World Generator WebGL.mem",
+    dataUrl: "Release/Website.data",
+    codeUrl: "Release/Website.js",
+    asmUrl: "Release/Website.asm.js",
+    memUrl: "Release/Website.mem",
   };
 </script>
 <script src="Release/UnityLoader.js"></script>
